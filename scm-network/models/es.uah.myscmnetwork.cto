@@ -1,0 +1,27 @@
+/**
+ * SCM trading network
+ */
+
+namespace es.uah.myscmnetwork
+
+participant SCMOwner identified by ownerId {
+  o String ownerId
+  o String name
+}
+
+asset SCMPortal identified by portalId {
+  o String portalId
+  --> SCMOwner owner
+}
+
+asset SCMAsset identified by assetId {
+  o String assetId
+  o String name
+  o String description
+  --> SCMOwner owner
+}
+
+transaction SCMTrade {
+  --> SCMAsset asset
+  --> SCMPortal portal
+}
