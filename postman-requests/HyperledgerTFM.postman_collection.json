@@ -1,0 +1,249 @@
+{
+	"info": {
+		"_postman_id": "99d893a7-8b38-450f-95e1-b7a1e9cd2fb2",
+		"name": "HyperledgerTFM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Owner #1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "723Ju56LhjUuiI7LMXsvK8s8wll6ZOpz",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"$class\": \"es.uah.myscmnetwork.SCMOwner\",\r\n  \"ownerId\": \"BA65X92G\",\r\n  \"name\": \"Opentech\"\r\n}"
+				},
+				"url": {
+					"raw": "http://ec2-18-224-165-102.us-east-2.compute.amazonaws.com:3000/api/es.uah.myscmnetwork.SCMOwner",
+					"protocol": "http",
+					"host": [
+						"ec2-18-224-165-102",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"es.uah.myscmnetwork.SCMOwner"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Owner #2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "723Ju56LhjUuiI7LMXsvK8s8wll6ZOpz",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"$class\": \"es.uah.myscmnetwork.SCMOwner\",\n    \"ownerId\": \"ACKMVHMG\",\n    \"name\": \"Iselectrics\"\n}"
+				},
+				"url": {
+					"raw": "http://ec2-18-224-165-102.us-east-2.compute.amazonaws.com:3000/api/es.uah.myscmnetwork.SCMOwner",
+					"protocol": "http",
+					"host": [
+						"ec2-18-224-165-102",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"es.uah.myscmnetwork.SCMOwner"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Asset #1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "723Ju56LhjUuiI7LMXsvK8s8wll6ZOpz",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"$class\": \"es.uah.myscmnetwork.SCMAsset\",\r\n  \"assetId\": \"21CE442E\",\r\n  \"name\": \"Baldor Super-E Motor\",\r\n  \"description\": \"Motor 50HP 1800RPM Frame 364T\",\r\n  \"owner\": \"resource:es.uah.myscmnetwork.SCMOwner#BA65X92G\"\r\n}"
+				},
+				"url": {
+					"raw": "http://ec2-18-224-165-102.us-east-2.compute.amazonaws.com:3000/api/es.uah.myscmnetwork.SCMAsset",
+					"protocol": "http",
+					"host": [
+						"ec2-18-224-165-102",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"es.uah.myscmnetwork.SCMAsset"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Asset #2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"type": "text",
+						"value": "723Ju56LhjUuiI7LMXsvK8s8wll6ZOpz"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"$class\": \"es.uah.myscmnetwork.SCMAsset\",\r\n  \"assetId\": \"126556D3\",\r\n  \"name\": \"Coupling Atra-Flex\",\r\n  \"description\": \"Coupling T-2 complete\",\r\n  \"owner\": \"resource:es.uah.myscmnetwork.SCMOwner#ACKMVHMG\"\r\n}"
+				},
+				"url": {
+					"raw": "http://ec2-18-224-165-102.us-east-2.compute.amazonaws.com:3000/api/es.uah.myscmnetwork.SCMAsset",
+					"protocol": "http",
+					"host": [
+						"ec2-18-224-165-102",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"es.uah.myscmnetwork.SCMAsset"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Portal #1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"type": "text",
+						"value": "723Ju56LhjUuiI7LMXsvK8s8wll6ZOpz"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"$class\": \"es.uah.myscmnetwork.SCMPortal\",\r\n  \"portalId\": \"XVDTBJLP\",\r\n  \"owner\": \"resource:es.uah.myscmnetwork.SCMOwner#BA65X92G\"\r\n}"
+				},
+				"url": {
+					"raw": "http://ec2-18-224-165-102.us-east-2.compute.amazonaws.com:3000/api/es.uah.myscmnetwork.SCMPortal",
+					"protocol": "http",
+					"host": [
+						"ec2-18-224-165-102",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"es.uah.myscmnetwork.SCMPortal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Portal #2",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"type": "text",
+						"value": "723Ju56LhjUuiI7LMXsvK8s8wll6ZOpz"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"$class\": \"es.uah.myscmnetwork.SCMPortal\",\r\n  \"portalId\": \"ML8A8U59\",\r\n  \"owner\": \"resource:es.uah.myscmnetwork.SCMOwner#ACKMVHMG\"\r\n}"
+				},
+				"url": {
+					"raw": "http://ec2-18-224-165-102.us-east-2.compute.amazonaws.com:3000/api/es.uah.myscmnetwork.SCMPortal",
+					"protocol": "http",
+					"host": [
+						"ec2-18-224-165-102",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"es.uah.myscmnetwork.SCMPortal"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
