@@ -244,6 +244,40 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Get All Trades",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "723Ju56LhjUuiI7LMXsvK8s8wll6ZOpz",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://ec2-18-224-165-102.us-east-2.compute.amazonaws.com:3000/api/es.uah.myscmnetwork.SCMTrade",
+					"protocol": "http",
+					"host": [
+						"ec2-18-224-165-102",
+						"us-east-2",
+						"compute",
+						"amazonaws",
+						"com"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"es.uah.myscmnetwork.SCMTrade"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
