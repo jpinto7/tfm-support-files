@@ -1,0 +1,21 @@
+{
+    "assetId": "21CE442E",
+    "portalId": "XVDTBJLP",
+    "eventType": "ownership",
+    "assetData": {
+        "temperature": 0.83,
+        "humidity": 55.2,
+        "weight": 24.61
+    },
+    "timestamp": {
+    	"$date": "2018-10-11T00:42:50.706Z"
+    },
+    "gatewayIP": "190.56.74.13",
+    "location": {
+        "type": "Point",
+        "coordinates": [
+            -90.5199,
+            14.6328
+        ]
+    }
+}
